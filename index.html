@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <style media="screen">
+    canvas {
+      background-color: blue;
+    }
+  </style>
+  <canvas id="mon_canvas" width="400" height="400">
+    Texte alternatif pour les navigateurs ne supportant pas Canvas.
+  </canvas>
+  <script type="text/javascript">
+  var c = document.getElementById("mon_canvas");
+  var ctx = c.getContext("2d");
+  //Cabine
+  ctx.beginPath();
+  ctx.strokeStyle = "#FFFFFF";
+  ctx.fillStyle = "#FFFFFF";
+  ctx.moveTo(120,170);
+  ctx.quadraticCurveTo(180,40,230,170);
+  ctx.fill();
+  ctx.stroke();
+  //Base de la soucoupe
+  ctx.beginPath();
+  ctx.strokeStyle = "#e0e1f3";
+  ctx.fillStyle = "#e0e1f3";
+  ctx.moveTo(50,200);
+  ctx.quadraticCurveTo(180,110,300,200);
+  ctx.fill();
+  ctx.stroke();
+  //Dessous de la soucoupe
+  ctx.beginPath();
+  ctx.strokeStyle = "#e0e1f3";
+  ctx.fillStyle = "#e0e1f3";
+  ctx.moveTo(50,200);
+  ctx.quadraticCurveTo(180,290,300,200);
+  ctx.fill();
+  ctx.stroke();
+
+  </script>
+</body>
+</html>
